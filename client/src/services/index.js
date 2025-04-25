@@ -49,7 +49,7 @@ export async function fetchInstructorCourseListService() {
 export async function addNewCourseService(formData) {
   console.log('Form Data:', formData);  // Log the data being sent
   const { data } = await axiosInstance.post(`/instructor/course/add`, formData);
-  return data;s
+  return data;
 }
 
 export async function fetchInstructorCourseDetailsService(id) {
